@@ -21,7 +21,7 @@ function setup() {
 	ground = new Ground();
     hammer = new Hammer(345,600,50,50);
     stone = new Stone(550,300,50,60);
-	rubber = new Rubber(700,400,20);
+	rubber = new Rubber(500,350,20);
 	Engine.run(engine);
   
 }

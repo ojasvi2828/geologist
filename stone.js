@@ -2,7 +2,7 @@ class Stone{
     constructor(x,y,width,height){
         var options ={ restitution: 1.0,
         friction:1.5,
-    density:11 } 
+    density:12 } 
        this.body = Bodies.rectangle(x,y,width,height, options);
        this.width=width;
        this.height=height;
@@ -15,7 +15,7 @@ class Stone{
             translate(pos.x, pos.y);
              rotate(angle);
               rectMode(CENTER); 
-              fill("blue");
+              fill("yellow");
         rect(0, 0, this.width, this.height);
              pop(); 
     }
