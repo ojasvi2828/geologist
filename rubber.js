@@ -3,15 +3,21 @@ class Rubber{
         var options = {restitution: 0.3,
          friction:5,
       density:1}
-      this.body = Bodies.circle(x,y,radius,options);
+      this.body = Bodies.circle(x,y,radius/2,options);
         this.radius = radius;
-
+        World.add(world,this.body);
 }
 
 display(){
   var pos =this.body.position;
-    circleMode(CENTER); 
+  var angle = this.body.angle;
          fill("yellow");
-        rect(pos.x, pos.y, this.radius);
+         push();
+            translate(pos.x, pos.y);
+          rotate(angle);
+        fill("pink");
+              circle(pos.x, pos.y, this.radius);
+             pop(); 
+         
 }
 }
