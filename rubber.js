@@ -11,12 +11,12 @@ class Rubber{
 display(){
   var pos =this.body.position;
   var angle = this.body.angle;
-        
+  
          push();
             translate(pos.x, pos.y);
           rotate(angle);
         fill("blue");
-              circle(pos.x, pos.y, this.radius/2);
+              circle(0, 0, this.radius/2);
              pop(); 
          
 }
