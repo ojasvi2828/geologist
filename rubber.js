@@ -2,7 +2,7 @@ class Rubber{
   constructor(x,y,radius){
         var options = {restitution: 0.3,
          friction:5,
-      density:10}
+      density:1}
       this.body = Bodies.circle(x,y,radius/2,options);
         this.radius = radius;
         World.add(world,this.body);
@@ -16,7 +16,7 @@ display(){
             translate(pos.x, pos.y);
           rotate(angle);
         fill("blue");
-              circle(0, 0, this.radius/2);
+              circle(0, 0, this.radius);
              pop(); 
          
 }

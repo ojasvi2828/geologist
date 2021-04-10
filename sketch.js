@@ -20,14 +20,14 @@ function setup() {
 	//Create the Bodies Here.
 	ground = new Ground();
     hammer = new Hammer(345,600,50,50);
-    stone = new Stone(550,300,50,60);
-	rubber = new Rubber(500,350,150);
+    stone = new Stone(550,300,80,65);
+	rubber = new Rubber(500,350,100);
   s = new Sand(300,500,25);
   a = new Sand(350,500,25);
   n = new Sand(200,500,25);
   d = new Sand(150,500,25);
   j = new Sand(320,500,25);
- iron = new Iron(400,400,60,60);
+ iron = new Iron(400,400,70,70);
 	Engine.run(engine);
   
 }
